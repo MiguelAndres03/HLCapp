@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fond_color"
+        tools:context=".RegisterActivity">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Registro de Jugador"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Identificación:"
+                android:textColor="#AEABAB"
+                android:textColorHint="#AEABAB"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spTypeId"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:backgroundTint="#AEABAB"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/editId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AEABAB"
+                android:ems="10"
+                android:hint="# Identificación"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AEABAB" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AEABAB"
+                android:ems="10"
+                android:hint="Nombres"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AEABAB" />
+
+            <EditText
+                android:id="@+id/surnameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AEABAB"
+                android:ems="10"
+                android:hint="Apellidos"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AEABAB" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etDate"
+                    android:layout_width="332dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="left"
+                    android:backgroundTint="#AEABAB"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:hint="Fecha de Nacimiento"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#AEABAB" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+            </GridLayout>
+
+            <EditText
+                android:id="@+id/editEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AEABAB"
+                android:ems="10"
+                android:hint="Edad"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AEABAB" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text=" Departamento:"
+                android:textColor="#AEABAB"
+                android:textColorHint="#AEABAB"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spDepartament"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:backgroundTint="#B1B0B0"
+                android:entries="@array/Departamento"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text=" Municipio:"
+                android:textColor="#AEABAB"
+                android:textColorHint="#AEABAB"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spMunicipio"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:backgroundTint="#AEABAB"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/editPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AEABAB"
+                android:ems="10"
+                android:hint="Telefono"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AEABAB" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AEABAB"
+                android:ems="10"
+                android:hint="Correo Electronico"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AEABAB" />
+
+            <EditText
+                android:id="@+id/editWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AEABAB"
+                android:ems="10"
+                android:hint="Peso (Kg)"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AEABAB" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text=" Posición de Juego:"
+                android:textColor="#AEABAB"
+                android:textColorHint="#AEABAB"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spPosicion"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:backgroundTint="#AEABAB"
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/editPieHabil"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text=" Pie Habil:"
+                android:textColor="#AEABAB"
+                android:textColorHint="#AEABAB"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spPieHabil"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:backgroundTint="#AEABAB"
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/editClub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AEABAB"
+                android:ems="10"
+                android:hint="Club Actual"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AEABAB" />
+
+            <EditText
+                android:id="@+id/editPatologia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AEABAB"
+                android:ems="10"
+                android:hint="Patologias"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AEABAB" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="left">
+
+                <TextView
+                    android:id="@+id/fotografia"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text=" Cargar fotografia"
+                    android:textColor="#AEABAB"
+                    android:textColorHint="#AEABAB"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/fotoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_marginLeft="190dp"
+                    android:background="#FBFBFB"
+                    android:backgroundTint="#00AEABAB"
+                    app:srcCompat="@android:drawable/ic_menu_camera" />
+
+            </GridLayout>
+
+
+            <Button
+                android:id="@+id/saveregisterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow"
+                android:text="Registrar"
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+

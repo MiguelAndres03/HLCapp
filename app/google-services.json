@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "447679903589",
+    "project_id": "hlcapp-2021",
+    "storage_bucket": "hlcapp-2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447679903589:android:4f50f7102502808d37138c",
+        "android_client_info": {
+          "package_name": "co.edu.uan.hlcapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447679903589-udpf82bta5idcf9k8dvf08chtm44v5ed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4D7hsPl78ag6-0YYzJnLDAttrPOkOnz4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447679903589-udpf82bta5idcf9k8dvf08chtm44v5ed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
